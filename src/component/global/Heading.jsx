@@ -1,9 +1,19 @@
-export default function Heading() {
-    
+import Text from "./Text";
 
-    return(
-        <div>
-            <p>Heading</p>
-        </div>
-    )
+
+export default function Heading({
+  as: Tag = "h2",
+  content = "",
+  children,
+  size = "base",
+  className = "",
+  bold = true,
+  clamp = false,
+}) {
+  return (
+    <Text as={Tag} size={size} bold={bold} clamp={clamp} className={`capitalize ${className}`}>
+      {content || children}
+    </Text>
+  );
 }
+

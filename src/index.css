@@ -5,13 +5,11 @@
   --font-display: "Kumbh Sans", "sans-serif";
   --color-white: #fff;
   --color-black: #000;
-  --color-primaryBlue: #02a6dc;
-  --color-secondaryBlue: #0091c0;
-  --color-tertiaryBlue: #007ba4;
-  --color-primaryGreen: #26f93b;
-  --color-primaryOrange: #f9a526;
-  --color-primaryAqua: #26f9ba;
-  --color-primaryGray: #f9fafb;
+  --color-tealishGreen: #49bf9d;
+  --color-warmRedTone: #e24d4a;
+  --color-veryLightGreen: #906F6F;
+  --color-softBlue: #619be2;
+  --color-primaryBrown: #fdf8f6;
   --breakpoint-sm: 420px;
   --breakpoint-md: 768px;
   --breakpoint-mdlg: 1000px;
