@@ -37,7 +37,7 @@ export default function NavBar() {
       <div className="flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 py-4">
         {/* LOGO */}
         <Heading as="h1" size="xl" className="flex items-center drop-shadow-md text-tealishGreen">
-          <span> JA </span>
+          <span> Joshua Akodu A.</span>
         </Heading>
 
         {/* Mobile menu button */}

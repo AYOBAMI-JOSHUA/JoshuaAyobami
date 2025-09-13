@@ -57,13 +57,12 @@ export default function Hero() {
     <section className="pt-20 md:pt-0 min-h-screen flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 bg-[#f6fbfd]">
       <div className="max-w-xl text-center md:text-left mb-8 md:mb-0">
         <h1 className="text-4xl md:text-5xl font-bold text-[#0b1d3a] leading-snug">
-          Hi, my <br />
-          name is <span className="text-tealishGreen">YourName</span>.
+          Hi, i'm a <br />Frontend <span className="text-tealishGreen">web developer</span>.
         </h1>
 
         <p className="mt-4 text-base md:text-lg text-tealishGreen">
-          I&apos;m an <span className="font-semibold">independent frontend developer</span>
-          {" "}who builds clean, interactive, responsive web experiences.
+          I&apos;m a <span className="font-semibold">Passionate web developer</span>
+          {" "}  with 1 years of experience to build all aspects of the user experience and interface for client-facing landing pages and websites.
         </p>
 
         <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
