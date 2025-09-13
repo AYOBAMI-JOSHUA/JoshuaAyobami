@@ -36,7 +36,7 @@ export default function NavBar() {
     <nav className="bg-white text-primaryBlue shadow fixed top-0 left-0 right-0 z-50">
       <div className="flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 py-4">
         {/* LOGO */}
-        <Heading as="h1" size="xl" className="flex items-center drop-shadow-md text-primaryBrown">
+        <Heading as="h1" size="xl" className="flex items-center drop-shadow-md text-tealishGreen">
           <span> Joshua Akodu A. </span>
         </Heading>
 
@@ -50,7 +50,7 @@ export default function NavBar() {
             icon={isMenuOpen ? "mdi:close" : "mdi:menu"}
             width="36"
             height="36"
-            className="text-primaryBrown"
+            className="text-tealishGreen"
           />
         </button>
 
@@ -63,7 +63,7 @@ export default function NavBar() {
                 to={link.url}
                 className={({ isActive }) =>
                   isActive
-                    ? "text-lg hover:underline hover:underline-offset-6 text-primaryBrown font-extrabold"
+                    ? "text-lg hover:underline hover:underline-offset-6 text-tealishGreen font-extrabold"
                     : "text-lg hover:underline hover:underline-offset-6"
                 }
               >

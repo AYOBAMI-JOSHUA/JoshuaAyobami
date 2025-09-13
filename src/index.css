@@ -20,7 +20,7 @@ h2 {
 }
 
 h2::after {
-  @apply absolute bottom-0 left-1/2 transform -translate-x-1/2 h-[2px] w-[80px] md:w-[100px] bg-tertiaryBlue rounded-2xl;
+  @apply absolute bottom-0 left-1/2 transform -translate-x-1/2 h-[2px] w-[80px] md:w-[100px] bg-amber-950 rounded-2xl;
   content: "";
 }
 
