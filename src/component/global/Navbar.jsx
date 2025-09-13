@@ -33,11 +33,11 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="bg-white text-primaryBlue shadow fixed top-0 left-0 right-0 z-50">
+    <nav className="text-primaryBlue fixed top-0 left-0 right-0 z-50">
       <div className="flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 py-4">
         {/* LOGO */}
         <Heading as="h1" size="xl" className="flex items-center drop-shadow-md text-tealishGreen">
-          <span> Joshua Akodu A. </span>
+          <span> JA </span>
         </Heading>
 
         {/* Mobile menu button */}

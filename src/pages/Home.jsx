@@ -1,9 +1,10 @@
-export default function Home() {
-    
+import CursorLook from "../component/home/CursorLook";
 
-    return(
-        <div>
-            <p>Home</p>
-        </div>
-    )
+
+export default function Home() {
+  return (
+    <main>
+      <CursorLook />
+    </main>
+  );
 }
