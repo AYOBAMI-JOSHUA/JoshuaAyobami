@@ -33,7 +33,8 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="text-primaryBlue fixed top-0 left-0 right-0 z-50">
+    <nav className="h-[70px] text-tealishGreen fixed top-0 left-0 right-0 z-50 bg-white">
+
       <div className="flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 py-4">
         {/* LOGO */}
         <Heading as="h1" size="xl" className="flex items-center drop-shadow-md text-tealishGreen">
@@ -63,8 +64,8 @@ export default function NavBar() {
                 to={link.url}
                 className={({ isActive }) =>
                   isActive
-                    ? "text-lg hover:underline hover:underline-offset-6 text-tealishGreen font-extrabold"
-                    : "text-lg hover:underline hover:underline-offset-6"
+                    ? "text-lg text-tealishGreen font-extrabold transition-all duration-300 origin-center hover:scale-110 hover:tracking-wide"
+                    : "text-lg transition-all duration-300 origin-center hover:scale-110 hover:tracking-wide"
                 }
               >
                 {link.title}

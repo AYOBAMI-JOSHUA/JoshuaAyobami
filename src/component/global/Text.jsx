@@ -22,7 +22,7 @@ export default function Text({
 
   const fontClass =
     Tag === "h1"
-      ? "font-extrabold"
+      ? "font-medium"
       : Tag === "h2"
       ? "font-bold"
       : Tag === "h3"
@@ -37,9 +37,27 @@ export default function Text({
       ? "font-bold"
       : "font-normal";
 
+
+    const fontStyle =
+  Tag === "h1"
+    ? "font-serif"
+    : Tag === "h2"
+    ? "font-serif"
+    : Tag === "h3"
+    ? "font-serif"
+    : Tag === "h4"
+    ? "font-serif"
+    : Tag === "h5"
+    ? "font-serif"
+    : Tag === "h6"
+    ? "font-serif"
+    : bold
+    ? "font-bold"
+    : "font-serif";
+
   return (
     <Tag
-      className={`${sizeClass} ${fontClass} ${
+      className={`${sizeClass} ${fontClass} ${fontStyle} ${
         clamp && "line-clamp-3"
       } ${className}`}
     >

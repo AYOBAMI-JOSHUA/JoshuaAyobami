@@ -1,6 +1,7 @@
-import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import Text from "../global/Text";
 
 export default function Hero() {
   const wrapperRef = useRef(null);   
@@ -54,30 +55,55 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="pt-20 md:pt-0 min-h-screen flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 bg-[#f6fbfd]">
-      <div className="max-w-xl text-center md:text-left mb-8 md:mb-0">
-        <h1 className="text-4xl md:text-5xl font-bold text-[#0b1d3a] leading-snug">
-          Hi, i'm a <br />Frontend <span className="text-tealishGreen">web developer</span>.
-        </h1>
+    <section className="h-full flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 bg-white mt-8">
+      <div className="max-w-xl text-center md:text-left mb-4 md:mb-0">
 
-        <p className="mt-4 text-base md:text-lg text-tealishGreen">
-          I&apos;m a <span className="font-semibold">Passionate web developer</span>
-          {" "}  with 1 years of experience to build all aspects of the user experience and interface for client-facing landing pages and websites.
-        </p>
+        <Text
+          as="h1"
+          size="3xl"
+          className="text-[#0b1d3a]"
+        >
+          Hi, I'm a <br />
+          Frontend <span className="text-tealishGreen">developer</span>.
+        </Text>
+
+        <Text
+          as="p"
+          size="base"
+          className="mt-4 text-tealishGreen"
+        >
+           with 1+ year of experience using React, JavaScript, HTML5, and TailwindCSS and other 
+           frameworks to build all aspects of the user experience and user interface
+            for client-facing landing pages.
+        </Text>
 
         <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
           <Link
             to="/about"
-            className="w-full sm:w-auto inline-block bg-tealishGreen text-white font-medium px-6 py-3 rounded-xl shadow-md hover:bg-tealishGreen transition text-center"
+            className="group inline-flex justify-center items-center gap-3 px-6 py-3 rounded-xl border-2 border-tealishGreen shadow-md font-medium transition-colors duration-300 overflow-hidden text-tealishGreen"
+            style={{
+              backgroundImage:
+                "repeating-linear-gradient(150deg, #e6fffa 0 4px, #b0f5edff 4px 6px)"
+
+            }}
           >
-            About Me
+            <span className="transition-all duration-300 origin-center group-hover:scale-115 ">
+              About Me
+            </span>
           </Link>
 
           <Link
-            to="/projects"
-            className="w-full sm:w-auto inline-block border-2 border-tealishGreen text-tealishGreen font-medium px-6 py-3 rounded-xl hover:bg-tealishGreen hover:text-white transition text-center"
+            to="/about"
+            className="group inline-flex justify-center items-center gap-3 px-6 py-3 rounded-xl border-2 border-tealishGreen shadow-md font-medium transition-colors duration-300 overflow-hidden text-tealishGreen"
+            style={{
+              backgroundImage:
+                "repeating-linear-gradient(150deg, #e6fffa 0 4px, #b0f5edff 4px 6px)"
+
+            }}
           >
-            View Projects
+            <span className="transition-all duration-300 origin-center group-hover:scale-115">
+              View Projects
+            </span>
           </Link>
         </div>
       </div>
@@ -85,7 +111,7 @@ export default function Hero() {
       {/* AVATAR */}
       <div
         ref={wrapperRef}
-        className="w-full md:w-[520px] flex justify-center relative mb-6 md:mb-0"
+        className="w-full md:w-[480px] flex justify-center relative mb-6 md:mb-0"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -118,14 +144,14 @@ export default function Hero() {
             {/* MOVING HEAD GROUP (only this group moves) */}
             <g ref={headRef} transform="translate(0,-150)">
               {/* head */}
-              <ellipse cx="0" cy="55" rx="150" ry="180" fill="#f2c9a0" stroke="#6a3b86" strokeWidth="8" />
+              <ellipse cx="0" cy="55" rx="150" ry="180" fill="#e6fffa" stroke="#14b8a6" strokeWidth="8" />
 
               {/* ears */}
-              <path d="M-170 50 C-190 50 -190 90 -170 100 C-150 90 -150 60 -170 50 Z" fill="#f2c9a0" stroke="#6a3b86" strokeWidth="5" />
-              <path d="M170 50 C190 50 190 90 170 100 C150 90 150 60 170 50 Z" fill="#f2c9a0" stroke="#6a3b86" strokeWidth="5" />
+              <path d="M-170 50 C-190 50 -190 90 -170 100 C-150 90 -150 60 -170 50 Z" fill="#e2eceaff" stroke="#49bf9d" strokeWidth="5" />
+              <path d="M170 50 C190 50 190 90 170 100 C150 90 150 60 170 50 Z" fill="#e2eceaff" stroke="#49bf9d" strokeWidth="5" />
 
               {/* glasses */}
-              <g stroke="#1c3d7c" strokeWidth="10" fill="none">
+              <g stroke="#49bf9d" strokeWidth="10" fill="none">
                 <rect x="-110" y="10" width="95" height="80" rx="18" />
                 <rect x="15" y="10" width="95" height="80" rx="18" />
                 <path d="M-15 50 L15 50" strokeWidth="8" />
@@ -142,21 +168,21 @@ export default function Hero() {
               <circle cx="62" cy="40" r="16" fill="#fff" />
 
               {/* pupils (refs for GSAP) */}
-              <circle ref={leftPupilRef} cx="-62" cy="40" r="9" fill="#3b1f7a" />
-              <circle ref={rightPupilRef} cx="62" cy="40" r="9" fill="#3b1f7a" />
+              <circle ref={leftPupilRef} cx="-62" cy="40" r="9" fill="#0b1d3a" />
+              <circle ref={rightPupilRef} cx="62" cy="40" r="9" fill="#0b1d3a" />
 
               {/* nose */}
-              <path d="M12 60 Q0 85 -12 60" fill="none" stroke="#6a3b86" strokeWidth="4" strokeLinecap="round" />
+              <path d="M12 60 Q0 85 -12 60" fill="none" stroke="#0f766e" strokeWidth="4" strokeLinecap="round" />
 
               {/* mouth */}
-              <path d="M-60 100 Q0 130 60 100" stroke="#6a3b86" strokeWidth="5" fill="none" strokeLinecap="round" />
+              <path d="M-60 100 Q0 130 60 100" stroke="#0b1d3a" strokeWidth="5" fill="none" strokeLinecap="round" />
 
               {/* chin shadow */}
               <ellipse cx="0" cy="130" rx="55" ry="20" fill="url(#dots)" opacity="0.5" />
 
               {/* eyebrows */}
-              <path d="M-100 28 Q-60 0 -40 20" stroke="#1c3d7c" strokeWidth="10" strokeLinecap="round" fill="none" />
-              <path d="M40 20 Q60 0 100 28" stroke="#1c3d7c" strokeWidth="10" strokeLinecap="round" fill="none" />
+              <path d="M-100 28 Q-60 0 -40 20" stroke="#0b1d3a" strokeWidth="10" strokeLinecap="round" fill="none" />
+              <path d="M40 20 Q60 0 100 28" stroke="#0b1d3a" strokeWidth="10" strokeLinecap="round" fill="none" />
             </g>
           </g>
         </svg>
