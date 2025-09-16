@@ -1,9 +1,32 @@
+import Text from "../global/Text";
+import Tools from "./Tools";
+
 export default function Skills() {
     
 
     return(
-        <div>
-            <p>Skills</p>
+       <div className=" p-8 ">
+            <Text
+                as="h1"
+                size="lg"
+                className="text-[#0b1d3a]"
+            >
+                SKILLS
+            </Text>
+    
+            <Text
+                as="p"
+                size="base"
+                className="mt-4 text-tealishGreen"
+            >
+                My core expertise lies in frontend development, with strong proficiency in HTML, CSS, JavaScript, and React. 
+                I am passionate about building clean, responsive, and interactive user interfaces that enhance user engagement.
+                 Beyond coding, I am deeply interested in problem-solving, continuous learning, and exploring how mathematical and 
+                 logical thinking can improve software development.
+            </Text>
+
+            <Tools />
+
         </div>
     )
 }
