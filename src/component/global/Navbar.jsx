@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Heading from "./Heading";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function NavBar() {
   const links = [
@@ -36,10 +36,11 @@ export default function NavBar() {
     <nav className="h-[70px] text-tealishGreen fixed top-0 left-0 right-0 z-50 bg-white">
 
       <div className="flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 py-4">
-        {/* LOGO */}
-        <Heading as="h1" size="xl" className="flex items-center drop-shadow-md text-tealishGreen">
-          <span> Joshua Akodu A.</span>
-        </Heading>
+        <Link to="/" className="flex items-center">
+          <Heading as="h1" size="xl" className="flex items-center drop-shadow-md text-tealishGreen">
+            <span> Joshua Akodu A.</span>
+          </Heading>
+        </Link>
 
         {/* Mobile menu button */}
         <button

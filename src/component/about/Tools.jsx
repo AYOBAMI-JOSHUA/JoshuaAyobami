@@ -27,17 +27,17 @@ export default function Tools() {
             Tools and Languages
         </Text>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-            {skills.map((skill, index) => (
-            <div
-                key={index}
-                className="flex flex-col items-center justify-center text-center p-4 rounded-xl border border-tealishGreen/30 hover:bg-tealishGreen/10 transition"
-            >
-                {skill.icon}
-                <span className="mt-2 text-sm font-medium text-[#0b1d3a]">{skill.name}</span>
-            </div>
-            ))}
-        </div>
+        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 gap-6">
+          {skills.map((skill, index) => (
+          <div
+              key={index}
+              className="flex flex-col items-center justify-center text-center p-4 rounded-xl border border-tealishGreen/30 hover:bg-tealishGreen/10 transition"
+          >
+              {skill.icon}
+              <span className="mt-2 text-sm font-medium text-[#0b1d3a]">{skill.name}</span>
+          </div>
+          ))}
+      </div>
     </div>
   );
 }

@@ -55,7 +55,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="h-full flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 bg-white mt-8">
+    <section className="h-full flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 mt-8">
       <div className="max-w-xl text-center md:text-left mb-4 md:mb-0">
 
         <Text
@@ -93,7 +93,7 @@ export default function Hero() {
           </Link>
 
           <Link
-            to="/about"
+            to="/project"
             className="group inline-flex justify-center items-center gap-3 px-6 py-3 rounded-xl border-2 border-tealishGreen shadow-md font-medium transition-colors duration-300 overflow-hidden text-tealishGreen"
             style={{
               backgroundImage:

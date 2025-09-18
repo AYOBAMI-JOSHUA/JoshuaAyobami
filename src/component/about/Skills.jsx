@@ -5,7 +5,7 @@ export default function Skills() {
     
 
     return(
-       <div className=" p-8 ">
+       <div className="py-8 sm:p-8 ">
             <Text
                 as="h1"
                 size="lg"

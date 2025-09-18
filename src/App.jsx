@@ -13,7 +13,7 @@ function App() {
   return (
     <>
      <BrowserRouter>
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen bg-[#f7f7f7]">
           <Navbar />
           <Routes>
             <Route path="/" element={ <Home /> } />
