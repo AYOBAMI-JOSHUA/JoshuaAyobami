@@ -2,21 +2,17 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import Education from "../component/about/Education";
 import Experience from "../component/about/Experience";
 import Skills from "../component/about/Skills";
-import Text from "../component/global/Text";
 import { Link } from "react-router-dom";
+import Heading from "../component/global/Heading";
 
 
 export default function About() {
   return (
     <div className="min-h-screen bg-[#f7f7f7] py-16 px-6 md:px-20 pt-[100px]">
         <div className="max-w-5xl mx-auto text-left">
-            <Text
-                as="h1"
-                size="3xl"
-                className="text-[#0b1d3a] text-center"
-            >
-                About Me
-            </Text>
+            <Heading as="h1" size="3xl" className="text-[#0b1d3a] text-center">
+               <span> About Me</span>
+            </Heading>
 
             <div className="bg-[#f7f7f7] sm:p-8 transition text-left">
                 <section className=" sm:p-4 text-left">

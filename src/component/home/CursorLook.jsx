@@ -56,7 +56,8 @@ export default function Hero() {
 
   return (
     <section className="h-full flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 mt-8">
-      <div className="max-w-xl text-center md:text-left mb-4 md:mb-0">
+      <div className="max-w-xl text-center lg:text-left mb-4 md:mb-0">
+
 
         <Text
           as="h1"
@@ -77,7 +78,7 @@ export default function Hero() {
             for client-facing landing pages.
         </Text>
 
-        <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+        <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
           <Link
             to="/about"
             className="group inline-flex justify-center items-center gap-3 px-6 py-3 rounded-xl border-2 border-tealishGreen shadow-md font-medium transition-colors duration-300 overflow-hidden text-tealishGreen"
