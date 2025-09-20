@@ -7,6 +7,7 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Project from "./pages/Project"
 import Connect from "./pages/Connect"
+import ProjectDetails from "./pages/ProjectDetails"
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" element={ <Home /> } />
             <Route path="/about" element={ <About /> } />
             <Route path="/projects" element={ <Project />} />
+            <Route path="/projects/:id" element={<ProjectDetails />} />
             <Route path="/connect" element={ <Connect />} />
           </Routes>
           <Footer />
