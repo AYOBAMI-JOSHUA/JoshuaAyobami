@@ -3,7 +3,8 @@ const projects = [
     id: "sona",
     title: "Sona & Son Ltd ",
     subtitle: "React • Tailwind • EmailJS",
-    image: "/projects/sona.png",
+    image: "/image/sona.png",
+    video: "/video/sona.webm",
     link: "https://sona-and-son-limited-2ol1.vercel.app/",
     github: "https://github.com/AYOBAMI-JOSHUA/sona-and-son-limited",
     description: `
@@ -12,12 +13,14 @@ const projects = [
       and a clean modern layout optimized for performance.
     `,
     technologies: ["React", "TailwindCSS", "EmailJS"],
+    name: "React.js",
   },
   {
     id: "Boomify",
     title: "Boomify",
     subtitle: "Html5 • Tailwind • Javascript • Stripe",
-    image: "/projects/spotify.png",
+    image: "/image/boomify.png",
+    video: "/video/boomify.webm",
     link: "https://boomify-o.onrender.com/",
     github: "https://github.com/AYOBAMI-JOSHUA/Boomify",
     description: `
@@ -30,7 +33,8 @@ const projects = [
     id: "nike",
     title: "Nike Landing Page",
     subtitle: "Html5 • Tailwind • Javascript • Framer Motion",
-    image: "/projects/nike.png",
+    image: "/image/nike.png",
+    video: "/video/nike.webm",
     link: "https://nikee-gamma.vercel.app/",
     github: "https://github.com/AYOBAMI-JOSHUA/Nikee",
     description: `
@@ -43,8 +47,9 @@ const projects = [
     id: "taskup",
     title: "TaskUp",
     subtitle: "Html5 • Tailwind • Javascript",
-    image: "/projects/nike.png",
-    link: " https://taskup-seven.vercel.app/",
+    image: "/image/taskup.png",
+    video: "/video/taskup.webm",
+    link: "https://taskup-seven.vercel.app/",
     github: "https://github.com/AYOBAMI-JOSHUA/TaskUp",
     description: `
       A task and note management web app, where users can manage there daily task and activities,

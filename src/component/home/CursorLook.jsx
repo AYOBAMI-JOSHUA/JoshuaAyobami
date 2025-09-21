@@ -94,7 +94,7 @@ export default function Hero() {
           </Link>
 
           <Link
-            to="/project"
+            to="/projects"
             className="group inline-flex justify-center items-center gap-3 px-6 py-3 rounded-xl border-2 border-tealishGreen shadow-md font-medium transition-colors duration-300 overflow-hidden text-tealishGreen"
             style={{
               backgroundImage:

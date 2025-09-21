@@ -1,5 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import projects from "../data/Project";
+import Heading from "../component/global/Heading";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 
 export default function ProjectDetails() {
@@ -19,28 +21,42 @@ export default function ProjectDetails() {
 
   return (
     <section className="py-20 px-6 md:px-16">
-      <Link to="/projects" className="text-tealishGreen underline">
-        ← Back to Projects
+      <Link
+        to="/projects"
+        className="inline-flex items-center gap-2 font-semibold text-tealishGreen group text-left"
+      >
+        <span className="transition-transform duration-300 group-hover:scale-110 inline-flex items-center font-semibold text-tealishGreen group text-left">
+          <Icon
+            icon="mdi:arrow-left"
+            className="text-xl text-tealishGreen"
+          />
+          Back to projects
+        </span>
       </Link>
 
       <div className="mt-8 max-w-4xl mx-auto">
-        <img
-          src={project.image}
+        <video
+          src={project.video}
           alt={project.title}
+          autoPlay
+          loop
+          muted
+          playsInline
           className="w-full rounded-xl shadow-lg"
         />
 
-        <h1 className="text-3xl md:text-4xl font-bold mt-6 text-[#0b1d3a]">
-          {project.title}
-        </h1>
-        <p className="text-tealishGreen">{project.subtitle}</p>
+        <Heading as="h3" size="2xl" className="text-[#0b1d3a] text-left py-2 mt-4">
+          <span>{project.title}</span>
+        </Heading>
 
-        <p className="mt-4 text-gray-700 leading-relaxed">
+        <p className="mt-2 text-tealishGreen leading-relaxed">
           {project.description}
         </p>
 
         <div className="mt-6">
-          <h3 className="font-semibold text-lg">Technologies:</h3>
+          <Heading as="h3" size="base" className="text-[#0b1d3a] text-left">
+            <span> Technologies: </span>
+          </Heading>
           <ul className="flex gap-3 flex-wrap mt-2">
             {project.technologies.map((tech, i) => (
               <li
@@ -54,22 +70,36 @@ export default function ProjectDetails() {
         </div>
 
         <div className="mt-8 flex gap-6">
-          <a
-            href={project.link}
-            target="_blank"
+          <Link
+            to={project.link}
             rel="noopener noreferrer"
-            className="px-5 py-2 rounded-md bg-tealishGreen text-white hover:bg-tealishGreen/80 transition"
-          >
-            Live Site
-          </a>
-          <a
-            href={project.github}
             target="_blank"
-            rel="noopener noreferrer"
-            className="px-5 py-2 rounded-md border border-tealishGreen text-tealishGreen hover:bg-tealishGreen hover:text-white transition"
+            className="group inline-flex justify-center items-center gap-3 px-6 py-3 rounded-xl border-2 border-tealishGreen shadow-md font-medium transition-colors duration-300 overflow-hidden text-tealishGreen"
+            style={{
+              backgroundImage:
+                "repeating-linear-gradient(150deg, #e6fffa 0 4px, #b0f5edff 4px 6px)"
+
+            }}
           >
-            GitHub
-          </a>
+            <span className="transition-all duration-300 origin-center group-hover:scale-115 ">
+              Live Link
+            </span>
+          </Link>
+          <Link
+            to={project.github}
+            rel="noopener noreferrer"
+            target="_blank"
+            className="group inline-flex justify-center items-center gap-3 px-6 py-3 rounded-xl border-2 border-tealishGreen shadow-md font-medium transition-colors duration-300 overflow-hidden text-tealishGreen"
+            style={{
+              backgroundImage:
+                "repeating-linear-gradient(150deg, #e6fffa 0 4px, #b0f5edff 4px 6px)"
+
+            }}
+          >
+            <span className="transition-all duration-300 origin-center group-hover:scale-115 ">
+              GitHub
+            </span>
+          </Link>
         </div>
       </div>
     </section>
