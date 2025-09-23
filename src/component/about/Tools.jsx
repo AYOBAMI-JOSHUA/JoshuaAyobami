@@ -3,17 +3,17 @@ import { SiJavascript, SiTypescript, SiTailwindcss, SiVercel, SiPhp } from "reac
 import Text from "../global/Text";
 
 const skills = [
-  { name: "JavaScript", icon: <SiJavascript className="text-[#0b1d3a]" size={32} /> },
-  { name: "TypeScript", icon: <SiTypescript className="text-[#0b1d3a]" size={32} /> },
-  { name: "React.js", icon: <FaReact className="text-[#49bf9d]" size={32} /> },
-  { name: "Node.js", icon: <FaNodeJs className="text-[#49bf9d]" size={32} /> },
-  { name: "TailwindCSS", icon: <SiTailwindcss className="text-[#0b1d3a]" size={32} /> },
-  { name: "HTML5", icon: <FaHtml5 className="text-[#49bf9d]" size={32} /> },
-  { name: "CSS3", icon: <FaCss3Alt className="text-[#49bf9d]" size={32} /> },
-  { name: "PHP", icon: <SiPhp className="text-[#0b1d3a]" size={32} /> },
-  { name: "Git", icon: <FaGitAlt className="text-[#49bf9d]" size={32} /> },
-  { name: "GitHub", icon: <FaGithub className="text-[#0b1d3a]" size={32} /> },
-  { name: "Vercel", icon: <SiVercel className="text-[#49bf9d]" size={32} /> },
+  { name: "JavaScript", icon: <SiJavascript className="text-darkNavy dark:text-offWhite" size={32} /> },
+  { name: "TypeScript", icon: <SiTypescript className="text-darkNavy dark:text-offWhite" size={32} /> },
+  { name: "React.js", icon: <FaReact className="text-tealishGreen" size={32} /> },
+  { name: "Node.js", icon: <FaNodeJs className="text-tealishGreen" size={32} /> },
+  { name: "TailwindCSS", icon: <SiTailwindcss className="text-darkNavy dark:text-offWhite" size={32} /> },
+  { name: "HTML5", icon: <FaHtml5 className="text-tealishGreen" size={32} /> },
+  { name: "CSS3", icon: <FaCss3Alt className="text-tealishGreen" size={32} /> },
+  { name: "PHP", icon: <SiPhp className="text-darkNavy dark:text-offWhite" size={32} /> },
+  { name: "Git", icon: <FaGitAlt className="text-tealishGreen" size={32} /> },
+  { name: "GitHub", icon: <FaGithub className="text-darkNavy dark:text-offWhite" size={32} /> },
+  { name: "Vercel", icon: <SiVercel className="text-tealishGreen" size={32} /> },
 ];
 
 export default function Tools() {
@@ -22,7 +22,7 @@ export default function Tools() {
         <Text
             as="h4"
             size="base"
-            className="text-[#0b1d3a] mb-6"
+            className="text-darkNavy dark:text-offWhite mb-6"
         >
             Tools and Languages
         </Text>
@@ -34,7 +34,7 @@ export default function Tools() {
               className="flex flex-col items-center justify-center text-center p-4 rounded-xl border border-tealishGreen/30 hover:bg-tealishGreen/10 transition"
           >
               {skill.icon}
-              <span className="mt-2 text-sm font-medium text-[#0b1d3a]">{skill.name}</span>
+              <span className="mt-2 text-sm font-medium text-darkNavy dark:text-offWhite">{skill.name}</span>
           </div>
           ))}
       </div>

@@ -11,7 +11,7 @@ export default function ProjectDetails() {
   if (!project) {
     return (
       <div className="text-center py-20">
-        <h2 className="text-2xl">Project not found</h2>
+        <h2 className="text-2xl text-darkNavy dark:text-offWhite">Project not found</h2>
         <Link to="/projects" className="text-tealishGreen underline">
           Back to Projects
         </Link>
@@ -20,7 +20,7 @@ export default function ProjectDetails() {
   }
 
   return (
-    <section className="py-20 px-6 md:px-16">
+    <section className="py-20 px-6 md:px-16 bg-offWhite dark:bg-darkNavy transition-colors duration-300">
       <Link
         to="/projects"
         className="inline-flex items-center gap-2 font-semibold text-tealishGreen group text-left"
@@ -45,7 +45,7 @@ export default function ProjectDetails() {
           className="w-full rounded-xl shadow-lg"
         />
 
-        <Heading as="h3" size="2xl" className="text-[#0b1d3a] text-left py-2 mt-4">
+        <Heading as="h3" size="2xl" className="text-darkNavy dark:text-offWhite text-left py-2 mt-4">
           <span>{project.title}</span>
         </Heading>
 
@@ -54,14 +54,14 @@ export default function ProjectDetails() {
         </p>
 
         <div className="mt-6">
-          <Heading as="h3" size="base" className="text-[#0b1d3a] text-left">
+          <Heading as="h3" size="base" className="text-darkNavy dark:text-offWhite text-left">
             <span> Technologies: </span>
           </Heading>
           <ul className="flex gap-3 flex-wrap mt-2">
             {project.technologies.map((tech, i) => (
               <li
                 key={i}
-                className="px-3 py-1 bg-tealishGreen/10 text-tealishGreen rounded-full text-sm"
+                className="px-3 py-1 bg-tealishGreen/10 dark:bg-tealishGreen/20 text-tealishGreen rounded-full text-sm"
               >
                 {tech}
               </li>

@@ -14,7 +14,7 @@ function App() {
   return (
     <>
      <BrowserRouter>
-        <div className="flex flex-col min-h-screen bg-[#f7f7f7]">
+        <div className="flex flex-col min-h-screen bg-[#f7f7f7] text-[#0b1d3a] dark:bg-[#0b1d3a] dark:text-[#f7f7f7] transition-colors duration-300">
           <Navbar />
           <Routes>
             <Route path="/" element={ <Home /> } />

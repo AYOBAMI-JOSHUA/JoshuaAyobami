@@ -5,8 +5,8 @@ export default function Connect() {
     
 
     return(
-        <main className="flex-grow min-h-[calc(100vh-70px-90px)] pt-[70px]">
-            <Heading as="h1" size="2xl" className="text-[#0b1d3a] text-center pt-8">
+        <main className="flex-grow min-h-[calc(100vh-70px-90px)] pt-[57px] bg-offWhite dark:bg-darkNavy transition-colors duration-300 mb-4">
+            <Heading as="h1" size="2xl" className="text-darkNavy dark:text-offWhite text-center pt-8">
                 <span> Let's connect</span>
             </Heading>
             <Form />

@@ -9,7 +9,7 @@ export default function Skills() {
             <Text
                 as="h1"
                 size="lg"
-                className="text-[#0b1d3a]"
+                className="text-darkNavy dark:text-offWhite"
             >
                 SKILLS
             </Text>

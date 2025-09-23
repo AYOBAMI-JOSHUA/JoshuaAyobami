@@ -12,7 +12,7 @@ export default function Footer() {
     ];
 
     return(
-        <footer >
+        <footer className="bg-offWhite dark:bg-darkNavy border-t border-tealishGreen/20" >
             <div className="px-4 sm:px-8 md:px-12 lg:px-20 h-[90px]">
                 <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
                     {/* Social Links */}
@@ -36,8 +36,8 @@ export default function Footer() {
                             to="/connect"
                             className="group flex items-center gap-2 text-tealishGreen font-semibold px-6 py-3 transition-all duration-300"
                         >
-                            <Icon icon="mdi:chat-outline" className="text-4xl text-[#0b1d3a]" />
-                            <span className="transition-transform duration-300 group-hover:scale-120 origin-center">
+                            <Icon icon="mdi:chat-outline" className="text-4xl text-darkNavy dark:text-offWhite" />
+                            <span className="transition-transform duration-300 group-hover:scale-110 origin-center text-tealishGreen">
                                 Hire Me
                             </span>
                         </Link>

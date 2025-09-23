@@ -19,7 +19,7 @@ export default function Experience() {
             <Text
                 as="h1"
                 size="lg"
-                className="text-[#0b1d3a]"
+                className="text-darkNavy dark:text-offWhite"
             >
                 EXPERIENCE
             </Text>
@@ -31,7 +31,7 @@ export default function Experience() {
                 <Text
                     as="h4"
                     size="base"
-                    className="flex text-[#0b1d3a] mb-2 pt-6 flex-row items-center group"
+                    className="flex text-darkNavy dark:text-offWhite mb-2 pt-6 flex-row items-center group"
                 >
                     Frontend developer, Sona & Son Ltd (November 2024)
                     <FaArrowUp
@@ -59,7 +59,7 @@ export default function Experience() {
                     className="flex flex-col items-center justify-center text-center p-4 rounded-xl border border-tealishGreen/30 hover:bg-tealishGreen/10 transition"
                 >
                     {skill.icon}
-                    <span className="mt-2 text-sm font-medium text-[#0b1d3a]">{skill.name}</span>
+                    <span className="mt-2 text-sm font-medium text-darkNavy dark:text-offWhite">{skill.name}</span>
                 </div>
                 ))}
             </div>

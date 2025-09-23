@@ -3,13 +3,19 @@
 
 @theme {
   --font-display: "Kumbh Sans", "serif";
-  --color-white: #fff;
-  --color-black: #000;
+
+
+  /* backgrounds */
+  --color-softWhite: #f7f7f7;
+  --color-darkBlue: #0b1d3a;
+  /* text colors */
+  --color-darkNavy: #0b1d3a;
+  --color-offWhite: #f7f7f7;
+
+  /* accents */
   --color-tealishGreen: #49bf9d;
-  --color-warmRedTone: #e24d4a;
-  --color-veryLightGreen: #906F6F;
-  --color-softBlue: #619be2;
-  --color-primaryBrown: #fdf8f6;
+
+ 
   --breakpoint-sm: 420px;
   --breakpoint-md: 768px;
   --breakpoint-mdlg: 1000px;

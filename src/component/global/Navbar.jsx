@@ -33,7 +33,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="h-[70px] text-tealishGreen fixed top-0 left-0 right-0 z-50 bg-white">
+    <nav className="h-[70px] fixed top-0 left-0 right-0 z-50 bg-softWhite text-darkNavy dark:bg-darkBlue dark:text-offWhite shadow-md transition-colors duration-300">
 
       <div className="flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 py-4">
         <Link to="/" className="flex items-center">
@@ -91,20 +91,14 @@ export default function NavBar() {
           isMenuOpen ? "max-h-80" : "max-h-0"
         }`}
       >
-        <ul
-          className="flex flex-col py-2 px-4 space-y-2 shadow"
-          style={{
-            backgroundColor: "rgba(0, 0, 0, 0.9)",
-            transition: "opacity 0.3s ease-in-out",
-          }}
-        >
+        <ul className="flex flex-col py-2 px-4 space-y-2 shadow bg-black/90 text-offWhite" >
           {links.map((link) => (
             <li key={link.id}>
               <NavLink
                 to={link.url}
                 className={({ isActive }) =>
                   isActive
-                    ? "flex items-center gap-3 py-3 px-2 rounded-md w-full text-secondaryBlue font-extrabold"
+                    ? "flex items-center gap-3 py-3 px-2 rounded-md w-full text-tealishGreen font-extrabold"
                     : "flex items-center gap-3 py-3 px-2 rounded-md w-full"
                 }
                 onClick={() => {

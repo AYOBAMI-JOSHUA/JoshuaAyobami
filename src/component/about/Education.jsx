@@ -8,7 +8,7 @@ export default function Education() {
             <Text
                 as="h1"
                 size="lg"
-                className="text-[#0b1d3a] text-left"
+                className="text-darkNavy dark:text-offWhite text-left"
             >
                 EDUCATION
             </Text>

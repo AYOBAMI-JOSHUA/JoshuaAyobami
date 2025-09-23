@@ -32,16 +32,16 @@ export default function ProjectCard({ project, index }) {
     <Link to={`/projects/${project.id}`}>
       <div
         ref={cardRef}
-        className="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer"
+        className="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer bg-offWhite dark:bg-darkNavy transition-colors duration-300"
       >
         <img
           src={project.image}
           alt={project.title}
           className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
         />
-        <div className="absolute inset-0 bg-black/50 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        <div className="absolute inset-0 bg-black/50 dark:bg-black/60 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
           <h3 className="text-tealishGreen text-xl font-semibold">{project.title}</h3>
-          <p className="text-white text-sm">{project.subtitle}</p>
+          <p className="text-offWhite dark:text-softWhite text-sm">{project.subtitle}</p>
         </div>
       </div>
     </Link>

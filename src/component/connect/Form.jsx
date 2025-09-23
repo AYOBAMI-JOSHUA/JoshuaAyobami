@@ -33,30 +33,24 @@ export default function Form() {
                     type="text"
                     name="from_name"
                     placeholder="Your Name"
-                    className="outline-none border border-gray-300 rounded-lg p-3 w-full 
-                    focus:border-tertiaryBlue/50 focus:ring-2 focus:ring-tertiaryBlue/20 
-                    transition-all duration-300"
+                    className="outline-none border border-gray-300 dark:border-gray-600 rounded-lg p-3 w-full bg-white dark:bg-darkNavy text-gray-900 dark:text-softWhite placeholder-gray-500 dark:placeholder-gray-400 focus:border-tealishGreen focus:ring-2 focus:ring-tealishGreen/30 transition-all duration-300"
                 />
                 <input
                     type="email"
                     name="from_email"
                     placeholder="Your Email"
-                    className="outline-none border border-gray-300 rounded-lg p-3 w-full 
-                    focus:border-tertiaryBlue/50 focus:ring-2 focus:ring-tertiaryBlue/20 
-                    transition-all duration-300"
+                    className="outline-none border border-gray-300 dark:border-gray-600 rounded-lg p-3 w-full bg-white dark:bg-darkNavy text-gray-900 dark:text-softWhite placeholder-gray-500 dark:placeholder-gray-400 focus:border-tealishGreen focus:ring-2 focus:ring-tealishGreen/30 transition-all duration-300"
                 />
                 <textarea
                     name="message"
                     rows={5}
                     placeholder="Your Message"
-                    className="outline-none border border-gray-300 rounded-lg p-3 w-full resize-none 
-                    focus:border-tertiaryBlue/50 focus:ring-2 focus:ring-tertiaryBlue/20 
-                    transition-all duration-300"
+                    className="outline-none border border-gray-300 dark:border-gray-600 rounded-lg p-3 w-full bg-white dark:bg-darkNavy text-gray-900 dark:text-softWhite placeholder-gray-500 dark:placeholder-gray-400 focus:border-tealishGreen focus:ring-2 focus:ring-tealishGreen/30 transition-all duration-300"
                 ></textarea>
                 <div className="flex justify-center items-center">
                     <button
                         type="submit"
-                        className="group inline-flex justify-center items-center gap-3 px-6 py-3 rounded-xl border-2 border-tealishGreen shadow-md font-medium transition-colors duration-300 overflow-hidden text-tealishGreen"
+                        className="group inline-flex justify-center items-center gap-3 px-6 py-3 rounded-xl border-2 border-tealishGreen shadow-md font-medium transition-colors duration-300 overflow-hidden text-tealishGreen bg-white dark:bg-darkNavy"
                         style={{
                         backgroundImage:
                             "repeating-linear-gradient(150deg, #e6fffa 0 4px, #b0f5edff 4px 6px)",

@@ -4,7 +4,7 @@ const projects = [
     title: "Sona & Son Ltd ",
     subtitle: "React • Tailwind • EmailJS",
     image: "/image/sona.png",
-    video: "/video/sona.webm",
+    video: "/video/sona.mp4",
     link: "https://sona-and-son-limited-2ol1.vercel.app/",
     github: "https://github.com/AYOBAMI-JOSHUA/sona-and-son-limited",
     description: `
@@ -20,7 +20,7 @@ const projects = [
     title: "Boomify",
     subtitle: "Html5 • Tailwind • Javascript • Stripe",
     image: "/image/boomify.png",
-    video: "/video/boomify.webm",
+    video: "/video/boomify.mp4",
     link: "https://boomify-o.onrender.com/",
     github: "https://github.com/AYOBAMI-JOSHUA/Boomify",
     description: `
@@ -34,7 +34,7 @@ const projects = [
     title: "Nike Landing Page",
     subtitle: "Html5 • Tailwind • Javascript • Framer Motion",
     image: "/image/nike.png",
-    video: "/video/nike.webm",
+    video: "/video/nike.mp4",
     link: "https://nikee-gamma.vercel.app/",
     github: "https://github.com/AYOBAMI-JOSHUA/Nikee",
     description: `
@@ -48,7 +48,7 @@ const projects = [
     title: "TaskUp",
     subtitle: "Html5 • Tailwind • Javascript",
     image: "/image/taskup.png",
-    video: "/video/taskup.webm",
+    video: "/video/taskup.mp4",
     link: "https://taskup-seven.vercel.app/",
     github: "https://github.com/AYOBAMI-JOSHUA/TaskUp",
     description: `

@@ -62,7 +62,7 @@ export default function Hero() {
         <Text
           as="h1"
           size="3xl"
-          className="text-[#0b1d3a]"
+          className="text-darkNavy dark:text-offWhite"
         >
           Hi, I'm a <br />
           Frontend <span className="text-tealishGreen">developer</span>.
@@ -71,17 +71,17 @@ export default function Hero() {
         <Text
           as="p"
           size="base"
-          className="mt-4 text-tealishGreen"
+          className="mt-4 text-tealishGreen dark:text-[#7ce0c6]"
         >
-           with 1+ year of experience using React, JavaScript, HTML5, and TailwindCSS and other 
-           frameworks to build all aspects of the user experience and user interface
-            for client-facing landing pages.
+          with 1+ year of experience using React, JavaScript, HTML5, and TailwindCSS and other 
+          frameworks to build all aspects of the user experience and user interface
+          for client-facing landing pages.
         </Text>
 
         <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
           <Link
             to="/about"
-            className="group inline-flex justify-center items-center gap-3 px-6 py-3 rounded-xl border-2 border-tealishGreen shadow-md font-medium transition-colors duration-300 overflow-hidden text-tealishGreen"
+            className="group inline-flex justify-center items-center gap-3 px-6 py-3 rounded-xl border-2 border-tealishGreen shadow-md font-medium transition-colors duration-300 overflow-hidden text-tealishGreen dark:text-[#7ce0c6] dark:border-[#7ce0c6]"
             style={{
               backgroundImage:
                 "repeating-linear-gradient(150deg, #e6fffa 0 4px, #b0f5edff 4px 6px)"
@@ -95,7 +95,7 @@ export default function Hero() {
 
           <Link
             to="/projects"
-            className="group inline-flex justify-center items-center gap-3 px-6 py-3 rounded-xl border-2 border-tealishGreen shadow-md font-medium transition-colors duration-300 overflow-hidden text-tealishGreen"
+            className="group inline-flex justify-center items-center gap-3 px-6 py-3 rounded-xl border-2 border-tealishGreen shadow-md font-medium transition-colors duration-300 overflow-hidden text-tealishGreen dark:text-[#7ce0c6] dark:border-[#7ce0c6]"
             style={{
               backgroundImage:
                 "repeating-linear-gradient(150deg, #e6fffa 0 4px, #b0f5edff 4px 6px)"
@@ -132,7 +132,7 @@ export default function Hero() {
 
             {/* subtle dot*/}
             <pattern id="dots" x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse">
-              <circle cx="1.5" cy="1.5" r="0.9" fill="#bfe8f5" />
+              <circle cx="1.5" cy="1.5" r="0.9" fill="#bfe8f5" className="dark:fill-[#2c4a7f]" />
             </pattern>
           </defs>
 
@@ -145,45 +145,45 @@ export default function Hero() {
             {/* MOVING HEAD GROUP (only this group moves) */}
             <g ref={headRef} transform="translate(0,-150)">
               {/* head */}
-              <ellipse cx="0" cy="55" rx="150" ry="180" fill="#e6fffa" stroke="#14b8a6" strokeWidth="8" />
+              <ellipse cx="0" cy="55" rx="150" ry="180" fill="#e6fffa" stroke="#14b8a6" strokeWidth="8" className="dark:fill-[#1e293b] dark:stroke-[#7ce0c6]"/>
 
               {/* ears */}
-              <path d="M-170 50 C-190 50 -190 90 -170 100 C-150 90 -150 60 -170 50 Z" fill="#e2eceaff" stroke="#49bf9d" strokeWidth="5" />
-              <path d="M170 50 C190 50 190 90 170 100 C150 90 150 60 170 50 Z" fill="#e2eceaff" stroke="#49bf9d" strokeWidth="5" />
+              <path d="M-170 50 C-190 50 -190 90 -170 100 C-150 90 -150 60 -170 50 Z" fill="#e2eceaff" stroke="#49bf9d" strokeWidth="5" className="dark:fill-[#2c4a7f] dark:stroke-[#7ce0c6]"/>
+              <path d="M170 50 C190 50 190 90 170 100 C150 90 150 60 170 50 Z" fill="#e2eceaff" stroke="#49bf9d" strokeWidth="5" className="dark:fill-[#2c4a7f] dark:stroke-[#7ce0c6]"/>
 
               {/* glasses */}
-              <g stroke="#49bf9d" strokeWidth="10" fill="none">
+              <g stroke="#49bf9d" strokeWidth="10" fill="none" className="dark:stroke-[#7ce0c6]">
                 <rect x="-110" y="10" width="95" height="80" rx="18" />
                 <rect x="15" y="10" width="95" height="80" rx="18" />
                 <path d="M-15 50 L15 50" strokeWidth="8" />
               </g>
 
               {/* lenses */}
-              <g fill="#f6fdff" opacity="0.9">
+              <g fill="#f6fdff" opacity="0.9" className="dark:fill-[#1e293b]">
                 <rect x="-104" y="14" width="83" height="72" rx="14" />
                 <rect x="21" y="14" width="83" height="72" rx="14" />
               </g>
 
               {/* eyes (white) */}
-              <circle cx="-62" cy="40" r="16" fill="#fff" />
-              <circle cx="62" cy="40" r="16" fill="#fff" />
+              <circle cx="-62" cy="40" r="16" fill="#fff" className="dark:fill-[#0f172a]" />
+              <circle cx="62" cy="40" r="16" fill="#fff" className="dark:fill-[#0f172a]" />
 
               {/* pupils (refs for GSAP) */}
-              <circle ref={leftPupilRef} cx="-62" cy="40" r="9" fill="#0b1d3a" />
-              <circle ref={rightPupilRef} cx="62" cy="40" r="9" fill="#0b1d3a" />
+              <circle ref={leftPupilRef} cx="-62" cy="40" r="9" fill="#0b1d3a" className="dark:fill-[#f1f5f9]"/>
+              <circle ref={rightPupilRef} cx="62" cy="40" r="9" fill="#0b1d3a" className="dark:fill-[#f1f5f9]" />
 
               {/* nose */}
-              <path d="M12 60 Q0 85 -12 60" fill="none" stroke="#0f766e" strokeWidth="4" strokeLinecap="round" />
+              <path d="M12 60 Q0 85 -12 60" fill="none" stroke="#0f766e" strokeWidth="4" strokeLinecap="round" className="dark:stroke-[#7ce0c6]" />
 
               {/* mouth */}
-              <path d="M-60 100 Q0 130 60 100" stroke="#0b1d3a" strokeWidth="5" fill="none" strokeLinecap="round" />
+              <path d="M-60 100 Q0 130 60 100" stroke="#0b1d3a" strokeWidth="5" fill="none" strokeLinecap="round" className="dark:stroke-[#f1f5f9]"/>
 
               {/* chin shadow */}
               <ellipse cx="0" cy="130" rx="55" ry="20" fill="url(#dots)" opacity="0.5" />
 
               {/* eyebrows */}
-              <path d="M-100 28 Q-60 0 -40 20" stroke="#0b1d3a" strokeWidth="10" strokeLinecap="round" fill="none" />
-              <path d="M40 20 Q60 0 100 28" stroke="#0b1d3a" strokeWidth="10" strokeLinecap="round" fill="none" />
+              <path d="M-100 28 Q-60 0 -40 20" stroke="#0b1d3a" strokeWidth="10" strokeLinecap="round" fill="none" className="dark:stroke-[#f1f5f9]" />
+              <path d="M40 20 Q60 0 100 28" stroke="#0b1d3a" strokeWidth="10" strokeLinecap="round" fill="none" className="dark:stroke-[#f1f5f9]" />
             </g>
           </g>
         </svg>
