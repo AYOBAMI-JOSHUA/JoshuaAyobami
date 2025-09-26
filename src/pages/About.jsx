@@ -29,7 +29,7 @@ export default function About() {
             </div>
             <div className="mt-6 text-left">
                 <Link
-                    to="https://drive.google.com/file/d/12bu5jampe17WqIzA4lonsJp-6zE3kyKA/view?usp=sharing"
+                    to="https://docs.google.com/document/d/1CDcLeHRMQUSugdVJnU84Rke86331rOx4RNpWzVkLt0A/edit?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 font-semibold text-tealishGreen group text-left"
