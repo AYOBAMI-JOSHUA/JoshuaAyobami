@@ -23,7 +23,7 @@ export default function Footer() {
                                 href={link.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-tealishGreen transition-all duration-300 transform hover:scale-125 hover:shadow-lg rounded-full"
+                                className="text-tealishGreen dark:text-offWhite transition-all duration-300 transform hover:scale-125 hover:shadow-lg rounded-full"
                             >
                               <Icon icon={link.icon} className="text-4xl" />
                             </a>

@@ -10,7 +10,7 @@ export default function About() {
   return (
     <div className="min-h-screen bg-softWhite dark:bg-darkBlue py-16 px-6 md:px-20 pt-[100px]">
         <div className="max-w-5xl mx-auto text-left">
-            <Heading as="h1" size="3xl" className="text-darkNavy dark:text-offWhite text-center">
+            <Heading as="h1" size="3xl" className="text-darkNavy dark:text-tealishGreen text-center">
                <span> About Me</span>
             </Heading>
 

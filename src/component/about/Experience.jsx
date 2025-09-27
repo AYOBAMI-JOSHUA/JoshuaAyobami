@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 export default function Experience() {
 
     const skills = [
-      { name: "JavaScript", icon: <SiJavascript className="text-[#0b1d3a]" size={32} /> },
-      { name: "React.js", icon: <FaReact className="text-[#49bf9d]" size={32} /> },
-      { name: "TailwindCSS", icon: <SiTailwindcss className="text-[#0b1d3a]" size={32} /> },
-      { name: "HTML5", icon: <FaHtml5 className="text-[#49bf9d]" size={32} /> },
-      { name: "Vercel", icon: <SiVercel className="text-[#49bf9d]" size={32} /> },
+      { name: "JavaScript", icon: <SiJavascript className="text-tealishGreen" size={32} /> },
+      { name: "React.js", icon: <FaReact className="text-tealishGreen" size={32} /> },
+      { name: "TailwindCSS", icon: <SiTailwindcss className="text-tealishGreen" size={32} /> },
+      { name: "HTML5", icon: <FaHtml5 className="text-tealishGreen" size={32} /> },
+      { name: "Vercel", icon: <SiVercel className="text-tealishGreen" size={32} /> },
     ];
     
 
@@ -19,7 +19,7 @@ export default function Experience() {
             <Text
                 as="h1"
                 size="lg"
-                className="text-darkNavy dark:text-offWhite"
+                className="text-darkNavy dark:text-tealishGreen"
             >
                 EXPERIENCE
             </Text>
@@ -31,11 +31,11 @@ export default function Experience() {
                 <Text
                     as="h4"
                     size="base"
-                    className="flex text-darkNavy dark:text-offWhite mb-2 pt-6 flex-row items-center group"
+                    className="flex text-darkNavy dark:text-tealishGreen mb-2 pt-6 flex-row items-center group"
                 >
                     Frontend developer, Sona & Son Ltd (November 2024)
                     <FaArrowUp
-                    className="ml-2 transform rotate-[50deg] text-[#49bf9d] transition-transform duration-300 group-hover:scale-125"
+                    className="ml-2 transform rotate-[50deg] text-darkNavy dark:text-tealishGreen transition-transform duration-300 group-hover:scale-125"
                     size={16}
                     />
                 </Text>
@@ -45,7 +45,7 @@ export default function Experience() {
             <Text
                 as="p"
                 size="base"
-                className="text-tealishGreen"
+                className="text-tealishGreen dark:text-offWhite"
             >
                Sona Property Ltd. is a real estate company that provides property sales, rentals, and 
                management services. I built and maintained responsive user interfaces, developed 

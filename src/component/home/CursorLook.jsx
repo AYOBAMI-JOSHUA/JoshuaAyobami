@@ -71,7 +71,7 @@ export default function Hero() {
         <Text
           as="p"
           size="base"
-          className="mt-4 text-tealishGreen dark:text-[#7ce0c6]"
+          className="mt-4 text-tealishGreen dark:text-offWhite"
         >
           with 1+ year of experience using React, JavaScript, HTML5, and TailwindCSS and other 
           frameworks to build all aspects of the user experience and user interface
@@ -81,10 +81,10 @@ export default function Hero() {
         <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
           <Link
             to="/about"
-            className="group inline-flex justify-center items-center gap-3 px-6 py-3 rounded-xl border-2 border-tealishGreen shadow-md font-medium transition-colors duration-300 overflow-hidden text-tealishGreen dark:text-[#7ce0c6] dark:border-[#7ce0c6]"
+            className="group inline-flex justify-center items-center gap-3 px-6 py-3 rounded-xl border-2 border-tealishGreen shadow-md font-medium transition-colors duration-300 overflow-hidden text-tealishGreen dark:text-[#0000FF] dark:border-[#0000FF]"
             style={{
               backgroundImage:
-                "repeating-linear-gradient(150deg, #e6fffa 0 4px, #b0f5edff 4px 6px)"
+                "repeating-linear-gradient(150deg, #e6fffa 0 4px, #b1b1f1ff 4px 6px)"
 
             }}
           >
@@ -95,10 +95,10 @@ export default function Hero() {
 
           <Link
             to="/projects"
-            className="group inline-flex justify-center items-center gap-3 px-6 py-3 rounded-xl border-2 border-tealishGreen shadow-md font-medium transition-colors duration-300 overflow-hidden text-tealishGreen dark:text-[#7ce0c6] dark:border-[#7ce0c6]"
+            className="group inline-flex justify-center items-center gap-3 px-6 py-3 rounded-xl border-2 border-tealishGreen shadow-md font-medium transition-colors duration-300 overflow-hidden text-tealishGreen dark:text-[#0000FF] dark:border-[#0000FF]"
             style={{
               backgroundImage:
-                "repeating-linear-gradient(150deg, #e6fffa 0 4px, #b0f5edff 4px 6px)"
+                "repeating-linear-gradient(150deg, #e6fffa 0 4px, #b1b1f1ff 4px 6px)"
 
             }}
           >
@@ -127,12 +127,12 @@ export default function Hero() {
             {/* diagonal stripe*/}
             <pattern id="diagStripes" patternUnits="userSpaceOnUse" width="18" height="18" patternTransform="rotate(-25)">
               <rect width="18" height="18" fill="#eaf6fb" />
-              <path d="M0 0 L0 5 L18 5 L18 0 Z" fill="#d2ecf6" />
+              <path d="M0 0 L0 5 L18 5 L18 0 Z" fill="#b1b1f1ff" />
             </pattern>
 
             {/* subtle dot*/}
             <pattern id="dots" x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse">
-              <circle cx="1.5" cy="1.5" r="0.9" fill="#bfe8f5" className="dark:fill-[#2c4a7f]" />
+              <circle cx="1.5" cy="1.5" r="0.9" fill="#b1b1f1ff" className="dark:fill-[#0000FF]" />
             </pattern>
           </defs>
 
@@ -145,21 +145,21 @@ export default function Hero() {
             {/* MOVING HEAD GROUP (only this group moves) */}
             <g ref={headRef} transform="translate(0,-150)">
               {/* head */}
-              <ellipse cx="0" cy="55" rx="150" ry="180" fill="#e6fffa" stroke="#14b8a6" strokeWidth="8" className="dark:fill-[#1e293b] dark:stroke-[#7ce0c6]"/>
+              <ellipse cx="0" cy="55" rx="150" ry="180" fill="#e6fffa" stroke="#0000FF" strokeWidth="8" className="dark:fill-[#b1b1f1ff] dark:stroke-[#0000FF]"/>
 
               {/* ears */}
-              <path d="M-170 50 C-190 50 -190 90 -170 100 C-150 90 -150 60 -170 50 Z" fill="#e2eceaff" stroke="#49bf9d" strokeWidth="5" className="dark:fill-[#2c4a7f] dark:stroke-[#7ce0c6]"/>
-              <path d="M170 50 C190 50 190 90 170 100 C150 90 150 60 170 50 Z" fill="#e2eceaff" stroke="#49bf9d" strokeWidth="5" className="dark:fill-[#2c4a7f] dark:stroke-[#7ce0c6]"/>
+              <path d="M-170 50 C-190 50 -190 90 -170 100 C-150 90 -150 60 -170 50 Z" fill="#e2eceaff" stroke="#0000FF" strokeWidth="5" className="dark:fill-[#2c4a7f] dark:stroke-[#0000FF]"/>
+              <path d="M170 50 C190 50 190 90 170 100 C150 90 150 60 170 50 Z" fill="#e2eceaff" stroke="#0000FF" strokeWidth="5" className="dark:fill-[#2c4a7f] dark:stroke-[#0000FF]"/>
 
               {/* glasses */}
-              <g stroke="#49bf9d" strokeWidth="10" fill="none" className="dark:stroke-[#7ce0c6]">
+              <g stroke="#0000FF" strokeWidth="10" fill="none" className="dark:stroke-[#0000FF]">
                 <rect x="-110" y="10" width="95" height="80" rx="18" />
                 <rect x="15" y="10" width="95" height="80" rx="18" />
                 <path d="M-15 50 L15 50" strokeWidth="8" />
               </g>
 
               {/* lenses */}
-              <g fill="#f6fdff" opacity="0.9" className="dark:fill-[#1e293b]">
+              <g fill="#f6fdff" opacity="0.9" className="dark:fill-[#b1b1f1ff]">
                 <rect x="-104" y="14" width="83" height="72" rx="14" />
                 <rect x="21" y="14" width="83" height="72" rx="14" />
               </g>
@@ -173,7 +173,7 @@ export default function Hero() {
               <circle ref={rightPupilRef} cx="62" cy="40" r="9" fill="#0b1d3a" className="dark:fill-[#f1f5f9]" />
 
               {/* nose */}
-              <path d="M12 60 Q0 85 -12 60" fill="none" stroke="#0f766e" strokeWidth="4" strokeLinecap="round" className="dark:stroke-[#7ce0c6]" />
+              <path d="M12 60 Q0 85 -12 60" fill="none" stroke="#0f766e" strokeWidth="4" strokeLinecap="round" className="dark:stroke-[#0000FF]" />
 
               {/* mouth */}
               <path d="M-60 100 Q0 130 60 100" stroke="#0b1d3a" strokeWidth="5" fill="none" strokeLinecap="round" className="dark:stroke-[#f1f5f9]"/>

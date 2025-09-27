@@ -8,7 +8,7 @@ export default function Education() {
             <Text
                 as="h1"
                 size="lg"
-                className="text-darkNavy dark:text-offWhite text-left"
+                className="text-darkNavy dark:text-tealishGreen text-left"
             >
                 EDUCATION
             </Text>
@@ -16,7 +16,7 @@ export default function Education() {
             <Text
                 as="p"
                 size="base"
-                className="mt-4 text-tealishGreen text-left"
+                className="mt-4 text-tealishGreen dark:text-offWhite text-left"
             >
                 I am a 400-level student at the 
                  <span className="font-bold"> University of Lagos</span>, pursuing a 

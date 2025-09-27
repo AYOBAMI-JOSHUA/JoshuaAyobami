@@ -25,10 +25,10 @@ export default function ProjectDetails() {
         to="/projects"
         className="inline-flex items-center gap-2 font-semibold text-tealishGreen group text-left"
       >
-        <span className="transition-transform duration-300 group-hover:scale-110 inline-flex items-center font-semibold text-tealishGreen group text-left">
+        <span className="transition-transform duration-300 group-hover:scale-110 inline-flex items-center font-semibold text-darkNavy dark:text-tealishGreen group text-left">
           <Icon
             icon="mdi:arrow-left"
-            className="text-xl text-tealishGreen"
+            className="text-xl text-darkNavy dark:text-tealishGreen"
           />
           Back to projects
         </span>
@@ -77,7 +77,7 @@ export default function ProjectDetails() {
             className="group inline-flex justify-center items-center gap-3 px-6 py-3 rounded-xl border-2 border-tealishGreen shadow-md font-medium transition-colors duration-300 overflow-hidden text-tealishGreen"
             style={{
               backgroundImage:
-                "repeating-linear-gradient(150deg, #e6fffa 0 4px, #b0f5edff 4px 6px)"
+                "repeating-linear-gradient(150deg, #e6fffa 0 4px, #b1b1f1ff 4px 6px)"
 
             }}
           >
@@ -92,7 +92,7 @@ export default function ProjectDetails() {
             className="group inline-flex justify-center items-center gap-3 px-6 py-3 rounded-xl border-2 border-tealishGreen shadow-md font-medium transition-colors duration-300 overflow-hidden text-tealishGreen"
             style={{
               backgroundImage:
-                "repeating-linear-gradient(150deg, #e6fffa 0 4px, #b0f5edff 4px 6px)"
+                "repeating-linear-gradient(150deg, #e6fffa 0 4px, #b1b1f1ff 4px 6px)"
 
             }}
           >

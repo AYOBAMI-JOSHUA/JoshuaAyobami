@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+
 @theme {
   --font-display: "Kumbh Sans", "serif";
 
@@ -13,7 +16,7 @@
   --color-offWhite: #f7f7f7;
 
   /* accents */
-  --color-tealishGreen: #49bf9d;
+  --color-tealishGreen: #0000FF;
 
  
   --breakpoint-sm: 420px;
@@ -29,6 +32,7 @@ h2::after {
   @apply absolute bottom-0 left-1/2 transform -translate-x-1/2 h-[2px] w-[80px] md:w-[100px] bg-amber-950 rounded-2xl;
   content: "";
 }
+
 
 html {
   @apply scroll-smooth scroll-p-20;

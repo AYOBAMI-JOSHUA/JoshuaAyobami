@@ -2,6 +2,8 @@ import { useState } from "react";
 import Heading from "./Heading";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Link, NavLink } from "react-router-dom";
+import Darkmodetoogle from "./Darkmodetoogle";
+
 
 export default function NavBar() {
   const links = [
@@ -42,20 +44,25 @@ export default function NavBar() {
           </Heading>
         </Link>
 
-        {/* Mobile menu button */}
-        <button
-          className="md:hidden focus:outline-none"
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
-          <Icon
-            icon={isMenuOpen ? "mdi:close" : "mdi:menu"}
-            width="36"
-            height="36"
-            className="text-tealishGreen"
-          />
-        </button>
+        <div className="flex items-center gap-3">
 
+          {/* Dark mode toggle */}
+          <Darkmodetoogle />
+
+          {/* Mobile menu button */}
+          <button
+            className="md:hidden focus:outline-none"
+            onClick={toggleMenu}
+            aria-label="Toggle menu"
+          >
+            <Icon
+              icon={isMenuOpen ? "mdi:close" : "mdi:menu"}
+              width="36"
+              height="36"
+              className="text-tealishGreen"
+            />
+          </button>
+        </div>
         {/* Desktop menu */}
         <ul className="hidden md:flex justify-center space-x-4 lg:space-x-6 items-center">
           {links.map((link) => (
