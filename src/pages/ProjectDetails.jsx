@@ -45,11 +45,11 @@ export default function ProjectDetails() {
           className="w-full rounded-xl shadow-lg"
         />
 
-        <Heading as="h3" size="2xl" className="text-darkNavy dark:text-offWhite text-left py-2 mt-4">
+        <Heading as="h3" size="2xl" className="text-darkNavy dark:text-tealishGreen text-left py-2 mt-4">
           <span>{project.title}</span>
         </Heading>
 
-        <p className="mt-2 text-tealishGreen leading-relaxed">
+        <p className="mt-2 text-tealishGreen dark:text-offWhite leading-relaxed">
           {project.description}
         </p>
 
