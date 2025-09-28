@@ -39,7 +39,7 @@ export default function NavBar() {
 
       <div className="flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 py-4">
         <Link to="/" className="flex items-center">
-          <Heading as="h1" size="xl" className="flex items-center drop-shadow-md text-tealishGreen">
+          <Heading as="h1" size="xl" className="flex items-center drop-shadow-md text-tealishGreen dark:offWhite">
             <span> Joshua Akodu A.</span>
           </Heading>
         </Link>
@@ -59,7 +59,7 @@ export default function NavBar() {
               icon={isMenuOpen ? "mdi:close" : "mdi:menu"}
               width="36"
               height="36"
-              className="text-tealishGreen"
+              className="text-tealishGreen dark:offWhite"
             />
           </button>
         </div>
