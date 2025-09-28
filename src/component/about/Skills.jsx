@@ -9,7 +9,7 @@ export default function Skills() {
             <Text
                 as="h1"
                 size="lg"
-                className="text-darkNavy dark:tealishGreen"
+                className="text-darkNavy dark:text-tealishGreen"
             >
                 SKILLS
             </Text>
@@ -17,7 +17,7 @@ export default function Skills() {
             <Text
                 as="p"
                 size="base"
-                className="mt-4 text-tealishGreen dark:offWhite"
+                className="mt-4 text-tealishGreen dark:text-offWhite"
             >
                 My core expertise lies in frontend development, with strong proficiency in HTML, CSS, JavaScript, and React. 
                 I am passionate about building clean, responsive, and interactive user interfaces that enhance user engagement.

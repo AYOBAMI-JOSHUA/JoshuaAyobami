@@ -26,7 +26,7 @@ export default function Connect() {
                             href={link.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-tealishGreen dark:offWhite transition-all duration-300 transform hover:scale-125 hover:shadow-lg rounded-full"
+                            className="text-tealishGreen dark:text-offWhite transition-all duration-300 transform hover:scale-125 hover:shadow-lg rounded-full"
                         >
                             <Icon icon={link.icon} className="text-3xl" />
                         </a>
