@@ -65,7 +65,7 @@ export default function Hero() {
           className="text-darkNavy dark:text-offWhite"
         >
           Hi, I'm a <br />
-          Frontend <span className="text-tealishGreen">developer</span>.
+          Frontend & Mobile <span className="text-tealishGreen">Developer</span>.
         </Text>
 
         <Text
@@ -73,10 +73,12 @@ export default function Hero() {
           size="base"
           className="mt-4 text-tealishGreen dark:text-offWhite"
         >
-          with 1+ year of experience using React, JavaScript, HTML5, and TailwindCSS and other 
-          frameworks to build all aspects of the user experience and user interface
-          for client-facing landing pages.
+          with 1+ year of experience building responsive web interfaces and mobile apps
+          using Next.js, React, React Native, JavaScript, TailwindCSS, and Convex.
+          I focus on creating smooth, scalable, and user-centered experiences across both
+          web and mobile platforms.
         </Text>
+
 
         <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
           <Link

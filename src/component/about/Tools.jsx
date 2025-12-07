@@ -1,20 +1,42 @@
-import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub } from "react-icons/fa";
-import { SiJavascript, SiTypescript, SiTailwindcss, SiVercel, SiPhp } from "react-icons/si";
+import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub, FaRoute } from "react-icons/fa";
+import { SiJavascript, SiTypescript, SiTailwindcss, SiVercel, SiPhp, SiNextdotjs, SiCloudflare, SiRedux, SiExpo } from "react-icons/si";
 import Text from "../global/Text";
 
 const skills = [
+  // Core Languages
   { name: "JavaScript", icon: <SiJavascript className="text-darkNavy dark:text-offWhite" size={32} /> },
   { name: "TypeScript", icon: <SiTypescript className="text-darkNavy dark:text-offWhite" size={32} /> },
+
+  // Web Frameworks
   { name: "React.js", icon: <FaReact className="text-tealishGreen" size={32} /> },
+  { name: "Next.js", icon: <SiNextdotjs className="text-darkNavy dark:text-offWhite" size={32} /> },
+
+  // Mobile Development
+  { name: "React Native", icon: <FaReact className="text-tealishGreen" size={32} /> },
+  { name: "Expo", icon: <SiExpo className="text-darkNavy dark:text-offWhite" size={32} /> },
+
+  // Backend & Database
   { name: "Node.js", icon: <FaNodeJs className="text-tealishGreen" size={32} /> },
+  { name: "Convex", icon: <SiCloudflare className="text-darkNavy dark:text-offWhite" size={32} /> }, // closest icon for Convex
+
+  // State Management & Routing
+  { name: "Zustand", icon: <SiRedux className="text-darkNavy dark:text-offWhite" size={32} /> }, // placeholder icon
+  { name: "Expo Router", icon: <FaRoute className="text-tealishGreen" size={32} /> },
+
+  // Styling
   { name: "TailwindCSS", icon: <SiTailwindcss className="text-darkNavy dark:text-offWhite" size={32} /> },
+  { name: "React Native StyleSheet", icon: <FaCss3Alt className="text-tealishGreen" size={32} /> },
+
+  // Core Web
   { name: "HTML5", icon: <FaHtml5 className="text-tealishGreen" size={32} /> },
   { name: "CSS3", icon: <FaCss3Alt className="text-tealishGreen" size={32} /> },
-  { name: "PHP", icon: <SiPhp className="text-darkNavy dark:text-offWhite" size={32} /> },
+
+  // Tools
   { name: "Git", icon: <FaGitAlt className="text-tealishGreen" size={32} /> },
   { name: "GitHub", icon: <FaGithub className="text-darkNavy dark:text-offWhite" size={32} /> },
   { name: "Vercel", icon: <SiVercel className="text-tealishGreen" size={32} /> },
 ];
+
 
 export default function Tools() {
   return (

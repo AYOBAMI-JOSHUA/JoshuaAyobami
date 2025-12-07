@@ -13,19 +13,23 @@ export default function Education() {
                 EDUCATION
             </Text>
     
-            <Text
+           <Text
                 as="p"
                 size="base"
-                className="mt-4 text-tealishGreen dark:text-offWhite text-left"
+                className="mt-4 text-tealishGreen dark:text-offWhite"
             >
-                I am a 400-level student at the 
-                 <span className="font-bold"> University of Lagos</span>, pursuing a 
-                 <span className="font-bold"> Bachelor’s degree in Mathematics. </span>
-                 My academic background has strengthened my problem solving abilities, logical reasoning, and analytical 
-                thinking skills that directly enhance my approach to software development. This foundation, combined 
-                with my passion for technology, supports my growth as a frontend developer and my ability to build efficient, 
-                user-focused solutions.
+                My core expertise lies in frontend and mobile development, with strong 
+                proficiency in JavaScript, React, Next.js, and React Native (Expo). 
+                I enjoy building clean, responsive, and interactive user interfaces that 
+                deliver smooth experiences across both web and mobile platforms. 
+                I also work with tools like Convex for real-time backend functionality, 
+                Zustand for state management, and Expo Router for navigation.
+                Beyond coding, I’m passionate about problem-solving, continuous learning, 
+                and applying mathematical and logical thinking to create efficient, 
+                scalable software solutions.
             </Text>
+
+
         </div>
     )
 }
