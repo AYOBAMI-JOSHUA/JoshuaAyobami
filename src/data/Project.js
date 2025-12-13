@@ -57,6 +57,48 @@ const projects = [
     `,
     technologies: ["Html5","Javascript", "TailwindCSS"],
   },
+  { 
+    id: "framez",
+    title: "Framez",
+    subtitle: "Html5 • Expo • Convex",
+    image: "/image/framez.PNG",
+    video: "/video/framez.mp4",
+    link: "https://appetize.io/app/b_isireb6ixsjwevmc5zjtqat3f4",
+    github: "https://github.com/AYOBAMI-JOSHUA/framez-app",
+    description: `
+      Designed and implemented a social media platform for sharing content and connecting with other
+       users, emphasizing smooth navigation, responsiveness, and user experience.
+    `,
+    technologies: ["Html5","React Native", "Convex"],
+  },
+  { 
+    id: "todo",
+    title: "Todo",
+    subtitle: "Html5 • Expo • Convex",
+    image: "/image/todo.JPG",
+    video: "/video/todo.mp4",
+    link: "https://drive.google.com/drive/folders/1Txh-Jgglu_GjF9avGKpyE2HgAICSFqkg?usp=drive_link",
+    github: "https://github.com/AYOBAMI-JOSHUA/Todo",
+    description: `
+      Designed and implemented a social media platform for sharing content and connecting with other
+       users, emphasizing smooth navigation, responsiveness, and user experience.
+    `,
+    technologies: ["Html5","React Native", "Convex"],
+  },
+  { 
+    id: "swifttix",
+    title: "SwiftTix",
+    subtitle: "Html5 • React • Tailwind",
+    image: "/image/swift.JPG",
+    video: "/video/SwiftTix.mp4",
+    link: "https://swift-tix.vercel.app/",
+    github: "https://github.com/AYOBAMI-JOSHUA/SwiftTix",
+    description: `
+      Designed and developed a ticket management web application with secure authentication, enabling
+       users to create, track, and manage support tickets through an intuitive interface.
+    `,
+    technologies: ["Html5","React", "TailwindCSS"],
+  },
 ];
 
 export default projects;
