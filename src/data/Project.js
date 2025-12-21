@@ -99,6 +99,22 @@ const projects = [
     `,
     technologies: ["Html5","React", "TailwindCSS"],
   },
+  { 
+    id: "audiophile-ecommerce",
+    title: "Audiophile",
+    subtitle: "NextJS • Convex • Tailwind",
+    image: "/image/audiophile.JPG",
+    video: "/video/Audiophile.mp4",
+    link: "https://audiophile-ecommerce-bej2.vercel.app/",
+    github: "https://github.com/AYOBAMI-JOSHUA/audiophile-ecommerce",
+    description: `
+      Designed and developed a full-stack e-commerce web application using Next.js and Convex, 
+      featuring a fully functional shopping cart, secure checkout flow, and seamless order completion, 
+      allowing users to browse products, add items to cart, and complete purchases successfully through 
+      an intuitive interface.
+    `,
+    technologies: ["NextJS","Convex", "TailwindCSS"],
+  },
 ];
 
 export default projects;
